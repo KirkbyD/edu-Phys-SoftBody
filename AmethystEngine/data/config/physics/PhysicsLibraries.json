@@ -1,0 +1,11 @@
+{
+  "DLLs": [
+    {
+      "Library": "Amethyst_Physics_Wrapper.dll"
+    },
+    {
+      "Library": "Bullet_Physics_Wrapper.dll"
+    }
+  ],
+  "MakeFactory": "MakePhysicsFactory"
+ }

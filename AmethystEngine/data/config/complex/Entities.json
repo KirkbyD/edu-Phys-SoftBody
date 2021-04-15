@@ -1,0 +1,404 @@
+{
+  "Entities": [
+    {
+      "Name": "Ground Plane",
+      "Transform": {
+        "Position": "0.0f 0.0f 0.0f",
+        "Orientation": "0.0f 0.0f 0.f",
+        "Scale": "1.0f"
+      },
+      "Physics": [
+        {
+          "Shape": "Plane",
+          "Position": "0.0f 0.0f 0.0f",
+          "Normal": "0.0f 1.0f 0.0f"
+        }
+      ],
+      "Graphics": [
+        {
+          "Name": "Ground",
+          "Mesh": "FlatTerrain",
+          "Texture": "TerrainTexture",
+          "Scale": "2.0f"
+        }
+      ]
+    },
+    {
+      "Name": "-X Bound",
+      "Transform": {
+        "Position": "-256.0f 0.0f 0.0f",
+        "Orientation": "0.0f 0.0f 0.f",
+        "Scale": "1.0f"
+      },
+      "Physics": [
+        {
+          "Shape": "Plane",
+          "Position": "-256.0f 0.0f 0.0f",
+          "Normal": "1.0f 0.0f 0.0f"
+        }
+      ]
+    },
+    {
+      "Name": "X Bound",
+
+      "Transform": {
+        "Position": "256.0f 0.0f 0.0f",
+        "Orientation": "0.0f 0.0f 0.f",
+        "Scale": "1.0f"
+      },
+      "Physics": [
+        {
+          "Shape": "Plane",
+          "Position": "256.0f 0.0f 0.0f",
+          "Normal": "-1.0f 0.0f 0.0f"
+        }
+      ]
+    },
+    {
+      "Name": "-Z Bound",
+      "Transform": {
+        "Position": "0.0f 0.0f -256.0f",
+        "Orientation": "0.0f 0.0f 0.0f",
+        "Scale": "1.0f"
+      },
+      "Physics": [
+        {
+          "Shape": "Plane",
+          "Position": "0.0f 0.0f -256.0f",
+          "Normal": "0.0f 0.0f 1.0f"
+        }
+      ]
+    },
+    {
+      "Name": "Z Bound",
+      "Transform": {
+        "Position": "0.0f 0.0f 256.0f",
+        "Orientation": "0.0f 0.0f 0.f",
+        "Scale": "1.0f"
+      },
+      "Physics": [
+        {
+          "Shape": "Plane",
+          "Position": "0.0f 0.0f 256.0f",
+          "Normal": "0.0f 0.0f -1.0f"
+        }
+      ]
+    },
+    {
+      "Name": "Cloth Prime",
+      "Transform": {
+        "Position": "0.f 0.f 0.f",
+        "Orientation": "0.0f 0.0f 0.0f",
+        "Scale": "1.0f"
+      },
+      "Physics": [
+        {
+          "Shape": "Cloth",
+          "CornerA": "200.0f 120.0f 30.0f",
+          "CornerB": "200.0f 120.0f -30.0f",
+          "DownDir": "0.0f -1.0f 0.0f",
+          "NodeMass": ".5f",
+          "SpringConstant": "20.0f",
+          "NodesAcross": "8",
+          "NodesDown": "14"
+        }
+      ],
+      "Graphics": [
+        {
+          "Name": "Cloth",
+          "Mesh": "Sphere",
+          "Texture": "Brass",
+          "Scale": "1.0f"
+        }
+      ]
+    },
+    {
+      "Name": "Ball 02",
+      "Transform": {
+        "Position": "5.f 5.f -5.f",
+        "Orientation": "0.0f 0.0f 0.0f",
+        "Scale": "1.0f"
+      },
+      "Physics": [
+        {
+          "Shape": "Ball",
+          "Position": "20.0f 30.0f 20.0f",
+          "Radius": "2.0f",
+          "Mass": "2.0f"
+        }
+      ],
+      "Graphics": [
+        {
+          "Name": "Ground",
+          "Mesh": "Sphere",
+          "Texture": "Steel",
+          "Scale": "2.0f"
+        }
+      ]
+    },
+    {
+      "Name": "Ball 03",
+      "Transform": {
+        "Position": "5.f 5.f -5.f",
+        "Orientation": "0.0f 0.0f 0.0f",
+        "Scale": "1.0f"
+      },
+      "Physics": [
+        {
+          "Shape": "Ball",
+          "Position": "-20.0f 30.0f 20.0f",
+          "Radius": "3.0f",
+          "Mass": "3.0f"
+        }
+      ],
+      "Graphics": [
+        {
+          "Name": "Ground",
+          "Mesh": "Sphere",
+          "Texture": "Steel",
+          "Scale": "3.0f"
+        }
+      ]
+    },
+    {
+      "Name": "Ball 04",
+      "Transform": {
+        "Position": "5.f 5.f -5.f",
+        "Orientation": "0.0f 0.0f 0.0f",
+        "Scale": "1.0f"
+      },
+      "Physics": [
+        {
+          "Shape": "Ball",
+          "Position": "20.0f 30.0f -20.0f",
+          "Radius": "4.0f",
+          "Mass": "4.0f"
+        }
+      ],
+      "Graphics": [
+        {
+          "Name": "Ground",
+          "Mesh": "Sphere",
+          "Texture": "Steel",
+          "Scale": "4.0f"
+        }
+      ]
+    },
+    {
+      "Name": "Ball 05",
+      "Transform": {
+        "Position": "5.f 5.f -5.f",
+        "Orientation": "0.0f 0.0f 0.0f",
+        "Scale": "1.0f"
+      },
+      "Physics": [
+        {
+          "Shape": "Ball",
+          "Position": "-20.0f 30.0f -20.0f",
+          "Radius": "1.0f",
+          "Mass": "1.0f"
+        }
+      ],
+      "Graphics": [
+        {
+          "Name": "Ground",
+          "Mesh": "Sphere",
+          "Texture": "Steel",
+          "Scale": "1.0f"
+        }
+      ]
+    },
+    {
+      "Name": "The Big Boy",
+      "Transform": {
+        "Position": "5.f 5.f -5.f",
+        "Orientation": "0.0f 0.0f 0.0f",
+        "Scale": "1.0f"
+      },
+      "Physics": [
+        {
+          "Shape": "Ball",
+          "Position": "0.0f 80.0f 0.0f",
+          "Radius": "20.0f",
+          "Mass": "25.0f"
+        }
+      ],
+      "Graphics": [
+        {
+          "Name": "Ground",
+          "Mesh": "Sphere",
+          "Texture": "Marble",
+          "Scale": "20.0f"
+        }
+      ]
+    },
+    {
+      "Name": "Pizza Ball",
+      "Transform": {
+        "Position": "5.f 5.f -5.f",
+        "Orientation": "0.0f 0.0f 0.0f",
+        "Scale": "1.0f"
+      },
+      "Physics": [
+        {
+          "Shape": "Ball",
+          "Position": "-75.0f 60.0f -90.0f",
+          "Radius": "10.0f",
+          "Mass": "12.0f"
+        }
+      ],
+      "Graphics": [
+        {
+          "Name": "Ground",
+          "Mesh": "Sphere",
+          "Texture": "TMNT",
+          "Scale": "10.0f"
+        }
+      ]
+    },
+    {
+      "Name": "Tiny Globe",
+      "Transform": {
+        "Position": "5.f 5.f -5.f",
+        "Orientation": "0.0f 0.0f 0.0f",
+        "Scale": "1.0f"
+      },
+      "Physics": [
+        {
+          "Shape": "Ball",
+          "Position": "100.0f 30.0f 0.0f",
+          "Radius": "13.0f",
+          "Mass": "17.0f"
+        }
+      ],
+      "Graphics": [
+        {
+          "Name": "Ground",
+          "Mesh": "Sphere",
+          "Texture": "TerrainTexture",
+          "Scale": "13.0f"
+        }
+      ]
+    },
+    {
+      "Name": "Brass Ball",
+      "Transform": {
+        "Position": "5.f 5.f -5.f",
+        "Orientation": "0.0f 0.0f 0.0f",
+        "Scale": "1.0f"
+      },
+      "Physics": [
+        {
+          "Shape": "Ball",
+          "Position": "-100.0f 30.0f 20.0f",
+          "Radius": "15.0f",
+          "Mass": "18.0f"
+        }
+      ],
+      "Graphics": [
+        {
+          "Name": "Ground",
+          "Mesh": "Sphere",
+          "Texture": "Brass",
+          "Scale": "15.0f"
+        }
+      ]
+    },
+    {
+      "Name": "Fireball",
+      "Transform": {
+        "Position": "5.f 5.f -5.f",
+        "Orientation": "0.0f 0.0f 0.0f",
+        "Scale": "1.0f"
+      },
+      "Physics": [
+        {
+          "Shape": "Ball",
+          "Position": "50.0f 20.0f 20.0f",
+          "Radius": "20.0f",
+          "Mass": "5.0f"
+        }
+      ],
+      "Graphics": [
+        {
+          "Name": "Ground",
+          "Mesh": "Sphere",
+          "Texture": "Fire",
+          "Scale": "20.0f"
+        }
+      ]
+    },
+    {
+      "Name": "Fireball's Counterpart",
+      "Transform": {
+        "Position": "5.f 5.f -5.f",
+        "Orientation": "0.0f 0.0f 0.0f",
+        "Scale": "1.0f"
+      },
+      "Physics": [
+        {
+          "Shape": "Ball",
+          "Position": "50.0f 11.0f -20.0f",
+          "Radius": "11.0f",
+          "Mass": "13.0f"
+        }
+      ],
+      "Graphics": [
+        {
+          "Name": "Ground",
+          "Mesh": "Sphere",
+          "Texture": "Water",
+          "Scale": "11.0f"
+        }
+      ]
+    },
+    {
+      "Name": "Steel Ball Run",
+      "Transform": {
+        "Position": "5.f 5.f -5.f",
+        "Orientation": "0.0f 0.0f 0.0f",
+        "Scale": "1.0f"
+      },
+      "Physics": [
+        {
+          "Shape": "Ball",
+          "Position": "98.0f 30.0f -98.0f",
+          "Radius": "30.0f",
+          "Mass": "35.0f"
+        }
+      ],
+      "Graphics": [
+        {
+          "Name": "Ground",
+          "Mesh": "Sphere",
+          "Texture": "Steel",
+          "Scale": "30.0f"
+        }
+      ]
+    },
+    {
+      "Name": "Noob Lucker",
+      "Transform": {
+        "Position": "5.f 5.f -5.f",
+        "Orientation": "0.0f 0.0f 0.0f",
+        "Scale": "1.0f"
+      },
+      "Physics": [
+        {
+          "Shape": "Ball",
+          "Position": "77.0f 77.0f -77.0f",
+          "Radius": "7.7f",
+          "Mass": "7.7f"
+        }
+      ],
+      "Graphics": [
+        {
+          "Name": "Ground",
+          "Mesh": "Sphere",
+          "Texture": "TerrainTexture",
+          "Scale": "7.7f"
+        }
+      ]
+    }
+  ]
+}
